@@ -1,0 +1,97 @@
+/* Configuração geral para limpar as margens e usar uma fonte moderna */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página centralizado e com uma cor suave */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Título principal */
+h1, h2, .titulo {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilização do formulário (efeito de "card" flutuante) */
+#formulario {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Grupos de entrada (rótulos e inputs) */
+label {
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: -10px; /* Aproxima o texto do input */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efeito ao clicar no campo de texto */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilização do botão "Entrar" */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse no botão */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de sucesso ou erro */
+#mensagem {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #28a745; /* Cor verde para sucesso */
+}
+
+/* Estilo para quando o botão estiver desativado/carregando */
+button:disabled {
+    background-color: #6c757d !important; /* Muda para uma cor cinza */
+    color: #ffffff;
+}
